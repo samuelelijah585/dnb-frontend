@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "node api.js && next dev --turbopack",
+    "build": "node api.js && next build",
     "analyze": "ANALYZE=true next build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "a11y": "eslint --config eslint.config.a11y.mjs components app",
     "test": "vitest --run",
